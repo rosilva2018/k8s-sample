@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app
+spec:
+  selector:
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      labels:
+        app: app
+      annotations:
+        fluxcd.io/automated: "true"
+    spec:
+      containers:
+      - name: app
+        image: rosilva/app
+        env:
+          - name: AUTHOR
+            value: ROSILVA
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
