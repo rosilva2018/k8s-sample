@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag app:$(date +%s)
+      run: docker build . --file /home/runner/work/k8s-sample/k8s-sample/app/Dockerfile --tag app:$(date +%s)
