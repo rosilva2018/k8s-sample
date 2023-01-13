@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: rosilva/app
+        image: 827541801233.dkr.ecr.us-east-1.amazonaws.com/app:b522b77713759d687059002ae0681e7750e6780c
         env:
           - name: AUTHOR
             value: ROSILVA
