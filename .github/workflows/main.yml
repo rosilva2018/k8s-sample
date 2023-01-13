@@ -12,7 +12,6 @@ jobs:
    build-and-push:
      runs-on: ubuntu-latest
      steps:
-     - name: AWS ECR
      - uses: actions/checkout@v2
      - uses: docker://ghcr.io/kciter/aws-ecr-action:latest
        with:
