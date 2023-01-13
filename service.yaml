@@ -8,7 +8,7 @@ metadata:
   annotations:
     alb.ingress.kubernetes.io/healthcheck-path: /app/index.html
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: app
   ports:
