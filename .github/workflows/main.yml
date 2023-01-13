@@ -22,4 +22,5 @@ jobs:
          create_repo: true
          image_scanning_configuration: true
          set_repo_policy: true
+         repo_policy_file: repo-policy.json
          path: /home/runner/work/k8s-sample/k8s-sample/app/Dockerfile
