@@ -16,7 +16,7 @@ jobs:
          access_key_id: ${{ secrets.ACCESS_KEY_ID }}
          secret_access_key: ${{ secrets.SECRET_ACCESS_KEY }}
          account_id: ${{ secrets.ACCOUNT_ID }}
-         repo: ${{secrets.REPO}}
+         repo: docker/repo
          region: ${{secrets.REGION}}
          tags: latest,${{ github.sha }}
          create_repo: true
