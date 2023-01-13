@@ -18,7 +18,7 @@ spec:
         image: 827541801233.dkr.ecr.us-east-1.amazonaws.com/app:latest
         env:
           - name: AUTHOR
-            value: ROSILVA
+            value: RO
         resources:
           limits:
             memory: "128Mi"
