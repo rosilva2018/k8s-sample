@@ -1,4 +1,4 @@
-- name AWS ECR
+
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
